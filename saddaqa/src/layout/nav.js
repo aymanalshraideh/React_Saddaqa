@@ -1,15 +1,16 @@
-
-
+import React from "react";
+import { NavLink ,Link } from "react-router-dom";
 function Nav(){
+  
     return (
         <>
         {/* Navbar Start */}
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-      <a href="index.html" className="navbar-brand d-flex align-items-center">
+      <NavLink to="index.html" className="navbar-brand d-flex align-items-center">
         <h1 className="m-0 logo">
         Saddaqa
         </h1>
-      </a>
+      </NavLink>
       <button
         type="button"
         className="navbar-toggler"
@@ -20,61 +21,62 @@ function Nav(){
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto py-3 py-lg-0">
-          <a href="/" className="nav-item nav-link active">
+          
+          <NavLink to="/" className="nav-item nav-link ">
             Home
-          </a>
+          </NavLink>
           <div className="nav-item dropdown">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
             >
               Live
-            </a>
+            </Link>
             <div className="dropdown-menu bg-light m-0">
-              <a href="makkah" className="dropdown-item">
+              <NavLink to="makkah" className="dropdown-item">
               Makkah Live HD
-              </a>
-              <a href="madinah" className="dropdown-item">
+              </NavLink>
+              <NavLink to="madinah" className="dropdown-item">
               Madinah Live HD
-              </a>
+              </NavLink>
             </div>
           </div>
-          <a href="about" className="nav-item nav-link">
+          <NavLink to="about" className="nav-item nav-link">
             About Us
-          </a>
-          <a href="service.html" className="nav-item nav-link">
+          </NavLink>
+          <NavLink to="service.html" className="nav-item nav-link">
             Our Services
-          </a>
+          </NavLink>
           <div className="nav-item dropdown">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
             >
               Pages
-            </a>
+            </Link>
             <div className="dropdown-menu bg-light m-0">
-              <a href="feature.html" className="dropdown-item">
+              <NavLink to="feature.html" className="dropdown-item">
                 Features
-              </a>
-              <a href="appointment.html" className="dropdown-item">
+              </NavLink>
+              <NavLink to="appointment.html" className="dropdown-item">
                 Appointment
-              </a>
-              <a href="team.html" className="dropdown-item">
+              </NavLink>
+              <NavLink to="team.html" className="dropdown-item">
                 Our Team
-              </a>
-              <a href="testimonial.html" className="dropdown-item">
+              </NavLink>
+              <NavLink to="testimonial.html" className="dropdown-item">
                 Testimonial
-              </a>
-              <a href="404.html" className="dropdown-item">
+              </NavLink>
+              <NavLink to="404.html" className="dropdown-item">
                 404 Page
-              </a>
+              </NavLink>
             </div>
           </div>
-          <a href="contact" className="nav-item nav-link">
+          <NavLink to="contact" className="nav-item nav-link">
             Contact Us
-          </a>
+          </NavLink>
         </div>
       </div>
     </nav>

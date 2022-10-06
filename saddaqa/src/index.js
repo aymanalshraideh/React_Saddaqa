@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter ,Routes,Route } from 'react-router-dom';
 import Home from './components/Home';
-import Nav from './components/layout/nav';
-import Footer from './components/layout/footer';
+import Nav from './layout/nav';
+import Footer from './layout/footer';
 import About from './components/About';
 import Contact from './components/Contact';
 import Makkah from './components/Makkah';
@@ -11,8 +11,9 @@ import Madinah from './components/Madinah';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-<Nav />
+
 <BrowserRouter>
+<Nav />
 <Routes>
   <Route path='/' element={<Home />} />
   <Route path='/about' element={<About />} />
